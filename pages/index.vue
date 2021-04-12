@@ -2,7 +2,6 @@
   <div class="container">
     <div>
       <logo />
-      {{count}}
       <h1 class="title">
         nuxtjs
       </h1>
@@ -45,7 +44,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
