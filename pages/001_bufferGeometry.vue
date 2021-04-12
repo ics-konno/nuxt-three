@@ -1,11 +1,11 @@
 <template>
-  <canvas class="canvas" ref="canvas">
-  </canvas>
+  <canvas class="canvas" ref="canvas"> </canvas>
 </template>
 
 <script lang="ts">
-import * as THREE from "three"
-export default {
+import Vue from "vue";
+import * as THREE from "three";
+export default Vue.extend({
   mounted() {
     const width = 960;
     const height = 540;
@@ -26,12 +26,12 @@ export default {
 
     // 箱を作成
     const geometry = new THREE.BoxGeometry(500, 500, 500);
-    const material = new THREE.MeshStandardMaterial({color: 0x0000FF});
+    const material = new THREE.MeshStandardMaterial({ color: 0x0000ff });
     const box = new THREE.Mesh(geometry, material);
     scene.add(box);
 
     // 平行光源
-    const light = new THREE.DirectionalLight(0xFFFFFF);
+    const light = new THREE.DirectionalLight(0xffffff);
     light.intensity = 2; // 光の強さを倍に
     light.position.set(1, 1, 1);
     // シーンに追加
@@ -51,7 +51,7 @@ export default {
       renderer.render(scene, camera);
     }
   }
-}
+});
 </script>
 
 <style lang="scss" scoped>
