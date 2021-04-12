@@ -13,6 +13,8 @@
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "@nuxt/types": "^2.15.4",
+    "@nuxt/typescript-build": "^2.1.0",
     "nodemon": "^2.0.7"
   }
 }

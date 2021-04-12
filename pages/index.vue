@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <logo />
+      {{count}}
       <h1 class="title">
         nuxtjs
       </h1>
@@ -28,13 +29,19 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
     Logo
+  },computed: {
+    count(){
+      const n :number = 1
+      return n
+    }
   }
+
 }
 </script>
 
