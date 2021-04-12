@@ -9,11 +9,7 @@
         My astonishing Nuxt.js project
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
         </a>
         <a
@@ -23,25 +19,26 @@
         >
           GitHub
         </a>
+        <nuxt-link to="001_bufferGeometry">001_bufferGeometry</nuxt-link>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Logo from '~/components/Logo.vue'
+import Logo from "~/components/Logo.vue";
 
 export default {
   components: {
     Logo
-  },computed: {
-    count(){
-      const n :number = 1
-      return n
+  },
+  computed: {
+    count() {
+      const n: number = 1;
+      return n;
     }
   }
-
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -55,8 +52,8 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
