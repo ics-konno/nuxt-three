@@ -12,7 +12,7 @@ export default Vue.extend({
 
     // レンダラーを作成
     const renderer = new THREE.WebGLRenderer({
-      canvas: this.$refs.canvas
+      canvas: this.$refs.canvas as HTMLCanvasElement
     });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(width, height);
