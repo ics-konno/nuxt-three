@@ -11,10 +11,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
-      },
+        content: process.env.npm_package_description || ''
+      }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
    ** Customize the progress-bar color
@@ -41,5 +41,8 @@ export default {
      */
     // extend(config, ctx) {},
   },
-  buildModules: ['@nuxt/typescript-build']
-};
+  buildModules: ['@nuxt/typescript-build'],
+  server: {
+    port: 9999
+  }
+}

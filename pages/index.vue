@@ -19,7 +19,7 @@
         >
           GitHub
         </a>
-        <nuxt-link to="001_bufferGeometry">001_bufferGeometry</nuxt-link>
+        <nuxt-link to="001_instance_simplex4d">001_instance_simplex4d</nuxt-link>
       </div>
     </div>
   </div>
