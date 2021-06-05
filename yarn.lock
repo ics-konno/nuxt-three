@@ -1522,6 +1522,11 @@
   dependencies:
     browserslist "*"
 
+"@types/cannon@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@types/cannon/-/cannon-0.1.5.tgz#2a265031f662fc4ff3e57e89688e1a06c3bbd2ce"
+  integrity sha512-o+FQmZV4fDXKI1W+1Rt3FNDmMGU7Iv4ObWFAH/dVB9AqzdgD7FmbW4QmsxVQGcj8a563xyVV9UXVB9rba7ps2w==
+
 "@types/clean-css@*":
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/@types/clean-css/-/clean-css-4.2.4.tgz#4fe4705c384e6ec9ee8454bc3d49089f38dc038a"
@@ -2862,6 +2867,11 @@ caniuse-lite@^1.0.30001208:
   version "1.0.30001208"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001208.tgz#a999014a35cebd4f98c405930a057a0d75352eb9"
   integrity sha512-OE5UE4+nBOro8Dyvv0lfx+SRtfVIOM9uhKqFmJeUbGriqhhStgp1A0OyBpgy3OUF8AhYCT+PVwPC1gMl2ZcQMA==
+
+cannon@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/cannon/-/cannon-0.6.2.tgz#1e7bc72dd5841982f3c104c2bc578bfa4fb1c572"
+  integrity sha1-HnvHLdWEGYLzwQTCvFeL+k+xxXI=
 
 chalk@^1.1.3:
   version "1.1.3"

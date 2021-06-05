@@ -12,6 +12,7 @@
     "lint:js": "eslint --ext .js,.ts,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "cannon": "^0.6.2",
     "nuxt": "^2.0.0",
     "three": "^0.127.0"
   },
@@ -30,6 +31,7 @@
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
     "sass": "^1.32.8",
-    "sass-loader": "10"
+    "sass-loader": "10",
+    "@types/cannon": "^0.1.5"
   }
 }

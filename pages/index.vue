@@ -1,75 +1,44 @@
 <template>
   <div class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        nuxtjs
-      </h1>
-      <h2 class="subtitle">
-        My astonishing Nuxt.js project
-      </h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-        <nuxt-link to="001_instance_simplex4d">001_instance_simplex4d</nuxt-link>
+        <nuxt-link class="links_card" to="001_instance_simplex4d">001_instance_simplex4d</nuxt-link>
+        <nuxt-link class="links_card" to="002_3d-text">002_3d-text</nuxt-link>
+        <nuxt-link class="links_card" to="003_cannonjs_sample1">003_cannonjs_sample1</nuxt-link>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Logo from "~/components/Logo.vue";
 
 export default {
   components: {
-    Logo
   },
   computed: {
-    count() {
-      const n: number = 1;
-      return n;
-    }
-  }
+
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.container{
+  padding: 40px 20px;
 }
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
 .links {
-  padding-top: 15px;
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 24px;
+}
+.links_card {
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: linear-gradient(to right bottom, #000000, #444444);
 }
 </style>
