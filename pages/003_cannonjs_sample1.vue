@@ -58,6 +58,9 @@ export default Vue.extend({
     )
     box.castShadow = true
     scene.add(box)
+    document.addEventListener("click", () => {
+      boxBody.velocity.set(0, 10, 0)
+    })
 
     // 床の作成
     const planeMat = new CANNON.Material('plane')
