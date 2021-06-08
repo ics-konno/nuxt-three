@@ -5,6 +5,7 @@
         <nuxt-link class="links_card" to="001_instance_simplex4d">001_instance_simplex4d</nuxt-link>
         <nuxt-link class="links_card" to="002_3d-text">002_3d-text</nuxt-link>
         <nuxt-link class="links_card" to="003_cannonjs_sample1">003_cannonjs_sample1</nuxt-link>
+        <nuxt-link class="links_card" to="004_text-gravity">004_text-gravity</nuxt-link>
       </div>
     </div>
   </div>

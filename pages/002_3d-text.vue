@@ -12,8 +12,7 @@ export default Vue.extend({
   mounted() {
     const width = 960
     const height = 540
-    const amount = 10
-    const count = Math.pow(amount, 3)
+    const amount = 500
 
     // レンダラーを作成
     const renderer = new THREE.WebGLRenderer({
@@ -32,7 +31,7 @@ export default Vue.extend({
     camera.lookAt(0, 0, 0)
 
     const controls = new OrbitControls(camera, renderer.domElement)
-    console.log(controls)
+    controls.update()
 
 
     // テキストジオメトリを作成
@@ -50,7 +49,7 @@ export default Vue.extend({
         bevelOffset: 0,
         bevelSegments: 5
       } );
-      const material = new THREE.MeshBasicMaterial()
+      const material = new THREE.MeshPhongMaterial({ color: 0x97df5e });
       const mesh = new THREE.Mesh(geometry, material)
       scene.add(mesh)
     // } );
